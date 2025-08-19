@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="165"
+   version="1.1"
+   width="245"
+   id="svg105"
+   sodipodi:docname="commit_compass_logo.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview107"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.5761719"
+     inkscape:cx="128.79306"
+     inkscape:cy="234.42874"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="1990"
+     inkscape:window-y="889"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg105"
+     width="511px" />
+  <defs
+     id="defs75" />
+  <line
+     stroke="#1da1f2"
+     stroke-width="6"
+     x1="61.23341"
+     x2="21.233406"
+     y1="147.828"
+     y2="87.827995"
+     id="line79"
+     style="stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none" />
+  <line
+     stroke="#1da1f2"
+     stroke-width="6"
+     x1="21.233406"
+     x2="61.23341"
+     y1="87.827995"
+     y2="27.82799"
+     id="line81"
+     style="stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none" />
+  <line
+     stroke="#1da1f2"
+     stroke-width="6"
+     x1="61.23341"
+     x2="121.23343"
+     y1="147.828"
+     y2="67.827995"
+     id="line83"
+     style="stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none" />
+  <line
+     stroke="#1da1f2"
+     stroke-width="6"
+     x1="61.23341"
+     x2="101.23342"
+     y1="147.828"
+     y2="147.828"
+     id="line85"
+     style="stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none" />
+  <ellipse
+     cx="124.30647"
+     cy="67.994926"
+     fill="#1da1f2"
+     id="circle93"
+     rx="17.04097"
+     ry="16.891304"
+     style="stroke-width:1.41383" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none"
+     x="470.96283"
+     y="180.12553"
+     id="text3419"><tspan
+       sodipodi:role="line"
+       id="tspan3417"
+       x="470.96283"
+       y="180.12553" /></text>
+  <line
+     stroke="#1da1f2"
+     stroke-width="6"
+     x1="121.23343"
+     x2="159.90538"
+     y1="67.827995"
+     y2="57.606373"
+     id="line85-1"
+     style="stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none" />
+  <!-- Outer Circle -->
+  <ellipse
+     cx="-201.36938"
+     cy="30.32914"
+     stroke="#1da1f2"
+     stroke-width="4.41582"
+     fill="none"
+     id="circle57772"
+     transform="matrix(-0.92735644,-0.37417914,0.38196056,-0.92417862,0,0)"
+     rx="39.912998"
+     ry="39.572384"
+     style="stroke-width:8.0001413;stroke-miterlimit:4;stroke-dasharray:none" />
+  <!-- North Arrow (Pointing Up) -->
+  <polygon
+     points="50,40 40,50 50,10 60,50 "
+     fill="#1da1f2"
+     id="polygon57774"
+     transform="matrix(-0.82252758,-0.33188172,0.33589087,-0.81270998,222.65755,104.54827)" />
+  <!-- South Arrow (Pointing Down) -->
+  <polygon
+     points="50,60 40,50 50,90 60,50 "
+     fill="#ff0000"
+     id="polygon57776"
+     transform="matrix(-0.82252758,-0.33188172,0.33589087,-0.81270998,222.65755,104.54827)" />
+  <!-- Center Dot -->
+  <ellipse
+     cx="-201.36938"
+     cy="30.32914"
+     fill="#1da1f2"
+     id="circle57778"
+     transform="matrix(-0.92735644,-0.37417914,0.38196056,-0.92417862,0,0)"
+     rx="2.6608784"
+     ry="2.6381588"
+     style="stroke-width:0.883165" />
+  <ellipse
+     cx="25.518898"
+     cy="84.885918"
+     fill="#1da1f2"
+     id="circle93-3"
+     rx="17.04097"
+     ry="16.891304"
+     style="stroke-width:1.41383" />
+  <ellipse
+     cx="66.87748"
+     cy="20.924259"
+     fill="#1da1f2"
+     id="circle93-6"
+     rx="17.04097"
+     ry="16.891304"
+     style="stroke-width:1.41383" />
+  <ellipse
+     cx="62.566143"
+     cy="146.93224"
+     fill="#1da1f2"
+     id="circle93-7"
+     rx="17.04097"
+     ry="16.891304"
+     style="stroke-width:1.41383" />
+  <ellipse
+     cx="115.95647"
+     cy="146.46259"
+     fill="#1da1f2"
+     id="circle93-5"
+     rx="17.04097"
+     ry="16.891304"
+     style="stroke-width:1.41383" />
+</svg>

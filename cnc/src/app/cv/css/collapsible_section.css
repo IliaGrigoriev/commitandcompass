@@ -1,0 +1,78 @@
+/* Reset and base styling */
+.collapsible {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Header with hover effect */
+  .collapsible-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px 16px;
+    position: relative;
+    transition: color 0.3s ease;
+    color: #fff;
+  }
+  
+  /* Title with hover underline effect */
+  .collapsible-title {
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 12px;
+    line-height: 2;
+    position: relative;
+  }
+  
+  .collapsible-title::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    transition: transform 0.4s, opacity 0.4s;
+    opacity: 0;
+  }
+  
+  .collapsible-header:hover .collapsible-title::before {
+    transform: translateY(-0.25rem);
+    opacity: 1;
+  }
+  
+  /* Compass Icon Container */
+  .compass-container {
+    width: 32px;
+    height: 32px;
+  }
+  
+  /* Rotating needle */
+  .needle-group {
+    transform-origin: 50% 50%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .needle-group.rotated {
+    transform: rotate(180deg);
+  }
+  
+  /* Content section */
+  .collapsible-content {
+    padding: 12px 16px;
+    color: #ccc;
+    border-left: 2px solid rgba(255,255,255,0.4);
+    margin-left: 12px;
+    margin-top: -6px;
+    font-size: 14px;
+  }
+  
+  body {
+    background-color: #0B1C2C;
+  }
+  

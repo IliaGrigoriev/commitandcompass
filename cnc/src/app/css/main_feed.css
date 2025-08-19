@@ -1,0 +1,24 @@
+.main-container {
+  
+    background: var(--bg-gradient-dark); /* ✅ Matches global */
+    font-family: sans-serif;
+}
+
+.six-by-six-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
+}
+  
+.grid-item {
+    color: white;
+    padding: 2.23rem;
+    text-align: center;
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+  
+.grid-item:hover {
+    transform: scale(1.03);
+}
+  
