@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation }                from "react-router-dom";
+
 import "./css/sidebar.css";
 import "./css/hikes_and_bytes.css";
+
 import NeoHoverCard from "./gadgets/NeoHoverCard";
 import FrostyBytes  from "./hikes_and_bytes/FrostyBytes";
 
 // now your code/constants
 const base = import.meta.env.BASE_URL; // "/"
-//const base = 'C:/Ilia/commitandcompass/cnc/public/'
 const magaroja_logo        = `${base}photos/frosty_bytes/magaroja_snow.png`;
 const deploying_croissants = `${base}photos/deploying_croissants/dep_cr_logo.jpg`;
 const foggy_forever        = `${base}photos/foggy_forever/foggy_forever_logo.jpg`;
@@ -15,9 +16,8 @@ const yosemite_biobytes    = `${base}photos/yosemite_biobytes/yosemite_biobytes.
 
 
 export default function HikesAndBytes() {
-  console.log(magaroja_logo)
   const [selected, setSelected] = useState(null);
-  const location = useLocation();
+  const location                = useLocation();
 
   // Reset state when the location path is /hikes
   useEffect(() => {

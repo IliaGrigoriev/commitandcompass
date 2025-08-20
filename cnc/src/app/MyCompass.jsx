@@ -10,9 +10,11 @@ const NODE_RADIUS = 32;
 
 export default function MyCompass() {
   return (
-    <div style={{ position: 'absolute', left: POSITION_X, top: POSITION_Y, width: CANVAS_WIDTH, height: CANVAS_HEIGHT }}>
-      <Compass />
-    </div>
+    <div className = "sidebar-content">
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: CANVAS_HEIGHT, width: CANVAS_WIDTH }}> {/* , left: POSITION_X, top: POSITION_Y , height: '100%' */} 
+        <Compass />
+      </div>
+    </div>  
   );
 }
 
