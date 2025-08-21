@@ -1,0 +1,9 @@
+.main-container {
+  margin-left: 32px;
+  padding: 2rem;
+  min-height: 100vh;
+
+  background: var(--bg-gradient-dark); /* ✅ Matches global */
+  color: #be9b9b;
+  font-family: sans-serif;
+}

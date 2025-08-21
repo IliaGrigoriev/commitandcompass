@@ -1,20 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import './css/sidebar.css';
+import { useLocation }                from "react-router-dom";
 
-import magaroja_logo        from '/home/ilia/Pictures/cnc/images/frosty_bytes/magaroja_snow.png';
-import deploying_croissants from '/home/ilia/Pictures/cnc/images/deploying_croissants/dep_cr_logo.jpg';
-import foggy_forever        from '/home/ilia/Pictures/cnc/images/foggy_forever/foggy_forever_logo.jpg';
-import yosemite_biobytes    from '/home/ilia/Pictures/cnc/images/yosemite_biobytes/yosemite_biobytes.jpg';
-
-import './css/hikes_and_bytes.css';
+import "./css/sidebar.css";
+import "./css/hikes_and_bytes.css";
 
 import NeoHoverCard from "./gadgets/NeoHoverCard";
-import FrostyBytes  from './hikes_and_bytes/FrostyBytes';
+import FrostyBytes  from "./hikes_and_bytes/FrostyBytes";
+
+// now your code/constants
+const base = import.meta.env.BASE_URL; // "/"
+const magaroja_logo        = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const deploying_croissants = `${base}photos/deploying_croissants/dep_cr_logo.jpg`;
+const foggy_forever        = `${base}photos/foggy_forever/foggy_forever_logo.jpg`;
+const yosemite_biobytes    = `${base}photos/yosemite_biobytes/yosemite_biobytes.jpg`;
+
 
 export default function HikesAndBytes() {
   const [selected, setSelected] = useState(null);
-  const location = useLocation();
+  const location                = useLocation();
 
   // Reset state when the location path is /hikes
   useEffect(() => {

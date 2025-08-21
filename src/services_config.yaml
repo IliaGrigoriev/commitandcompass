@@ -1,0 +1,13 @@
+services:
+  - name: gateway
+    ip: 10.0.0.2
+    port: 5000
+  - name: web_frontend
+    ip: 10.0.0.3
+    port: 6000
+  - name: ml_ds
+    ip: 10.0.0.3
+    port: 6000
+  - name: sw_engineering
+    ip: 10.0.0.3
+    port: 6000

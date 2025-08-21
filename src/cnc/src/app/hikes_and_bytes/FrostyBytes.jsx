@@ -12,6 +12,7 @@ import frosty_bytes from './json_maps/frosty_bytes.geo.json';
 
 //import frosty_background from "/home/ilia/Pictures/cnc/images/frosty_bytes/background_frosty_modified.JPG"
 //import frosty_background from "/home/ilia/Pictures/cnc/images/frosty_bytes/background_frosty.JPG"
+/*
 import frosty_background from "/home/ilia/Pictures/cnc/images/frosty_bytes/background_frosty_spots_removed.JPG"
 //import frosty_background from "/home/ilia/Pictures/cnc/images/frosty_bytes/background_frosty_filter_last.JPG"
 
@@ -39,6 +40,36 @@ import minus_27_1 from "/home/ilia/Pictures/cnc/images/frosty_bytes/minus_27/IMG
 import minus_27_2 from "/home/ilia/Pictures/cnc/images/frosty_bytes/minus_27/VID_20200226_094220.mp4"
 import minus_27_3 from "/home/ilia/Pictures/cnc/images/frosty_bytes/minus_27/VID_20200226_133619.mp4"
 import minus_27_4 from "/home/ilia/Pictures/cnc/images/frosty_bytes/minus_27/IMG-20200226-WA0020.jpeg"
+*/
+
+const base = import.meta.env.BASE_URL; // usually "/"
+const frosty_background   = `${base}photos/frosty_bytes/magaroja_snow.png`;
+//import frosty_background from "/home/ilia/Pictures/cnc/images/frosty_bytes/background_frosty_filter_last.JPG"
+
+const packing_citroen  = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const bremen_video     = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const bremen_musicians = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const bremen_knight    = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const malmo_skysraper  = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const malmo_video      = `${base}photos/frosty_bytes/magaroja_snow.png`;
+
+const me_and_masja_farm       = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const citroen_add_fueling_up  = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const farm_video_1            = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const farm_video_2            = `${base}photos/frosty_bytes/magaroja_snow.png`;
+
+const sundsvall_1 = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const sundsvall_2 = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const sundsvall_3 = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const sundsvall_4 = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const sundsvall_5 = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const sundsvall_6 = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const sundsvall_7 = `${base}photos/frosty_bytes/magaroja_snow.png`;
+
+const minus_27_1 = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const minus_27_2 = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const minus_27_3 = `${base}photos/frosty_bytes/magaroja_snow.png`;
+const minus_27_4 = `${base}photos/frosty_bytes/magaroja_snow.png`;
 
 import ImageGallery from '../ImageGallery.jsx';
 
@@ -63,10 +94,10 @@ export default function FrostyBytes() {
 
   // Southern Sweden
   const media_southern_sweden = [
-    { type: "image", src: citroen_add_fueling_up,  orientation: "horizontal", description : "Description 2" },
-    { type: "image", src: me_and_masja_farm,       orientation: "horizontal", description : "Description 2" },
-    { type: "video", src: farm_video_1,            orientation: "vertical", description: "Our engagement video."},
-    { type: "video", src: farm_video_2,            orientation: "vertical", description: "Our engagement video."}
+    { type: "image", src: citroen_add_fueling_up, orientation: "horizontal", description : "Description 2" },
+    { type: "image", src: me_and_masja_farm,      orientation: "horizontal", description : "Description 2" },
+    { type: "video", src: farm_video_1,           orientation: "vertical", description: "Our engagement video."},
+    { type: "video", src: farm_video_2,           orientation: "vertical", description: "Our engagement video."}
     // Add more images with their actual dimensions
   ];
 
@@ -97,9 +128,10 @@ export default function FrostyBytes() {
       focusY={0.3}        // 30% from top
       fadeStrength={0.4}  // fade starts at 40% radius
     />
-    */}
+
     <BackgroundImage
       image={frosty_background}/>
+    */}
 
     <div className="page">
 
