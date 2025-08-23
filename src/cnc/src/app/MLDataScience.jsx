@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 import './css/sidebar.css';
 
 import SentimentRecognition from './ml_and_data_sc/SentimentRecognition';
+import KeywordSearch        from './ml_and_data_sc/KeywordSearch';
 
 export default function MLDataScience() {
   const [selected, setSelected] = useState(null);
@@ -20,7 +21,8 @@ export default function MLDataScience() {
   }, [location]);
 
   const cards = [
-    { key: "SentimentRecognition",  title: "Sentiment based Risk Prediction",  onClick: () => setSelected("SentimentRecognition") }
+    { key: "SentimentRecognition", title: "Sentiment based Risk Prediction", onClick: () => setSelected("SentimentRecognition") },
+    { key: "KeywordSearch",        title: "Keyword Search",                  onClick: () => setSelected("KeywordSearch") }
   ];
 
   if (selected === "SentimentRecognition") {
@@ -29,7 +31,15 @@ export default function MLDataScience() {
         <SentimentRecognition />
       </main>
     );
-  }
+  } 
+
+  if (selected === "KeywordSearch") {
+    return (
+      <main className="sidebar-content" style={{ minHeight: '100vh' }}>
+        <KeywordSearch />
+      </main>
+    );
+  } 
 
   return (
     <div className="main-container">
