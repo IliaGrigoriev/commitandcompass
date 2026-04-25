@@ -3,7 +3,19 @@
   padding: 2rem;
   min-height: 100vh;
 
-  background: var(--bg-gradient-dark); /* ✅ Matches global */
+  background: var(--bg-gradient-dark); 
   color: #be9b9b;
   font-family: sans-serif;
+}
+
+.section-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(156, 163, 175, 0.6),
+    transparent
+  );
+  margin: 8px 0;
 }

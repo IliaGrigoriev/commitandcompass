@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation }                from "react-router-dom";
 
 import "./css/sidebar.css";
-import "./css/hikes_and_bytes.css";
+import './css/hover_card_layout.css'
 
 import NeoHoverCard from "./gadgets/NeoHoverCard";
 import FrostyBytes  from "./hikes_and_bytes/FrostyBytes";
@@ -13,7 +13,6 @@ const magaroja_logo        = `${base}photos/frosty_bytes/magaroja_snow.png`;
 const deploying_croissants = `${base}photos/deploying_croissants/dep_cr_logo.jpg`;
 const foggy_forever        = `${base}photos/foggy_forever/foggy_forever_logo.jpg`;
 const yosemite_biobytes    = `${base}photos/yosemite_biobytes/yosemite_biobytes.jpg`;
-
 
 export default function HikesAndBytes() {
   const [selected, setSelected] = useState(null);
@@ -43,7 +42,7 @@ export default function HikesAndBytes() {
 
   return (
     <div className="main-container">
-      <div className="six-by-six-grid">
+      <div className="flex-grid">
         {cards.map(card => (
           <div key={card.key} className="grid-item">
             <NeoHoverCard

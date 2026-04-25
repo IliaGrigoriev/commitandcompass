@@ -1,0 +1,18 @@
+/* flexible layout */
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: left;
+}
+
+/* wrapper around each card */
+.grid-item {
+    flex: 0 0 auto; /* don't stretch */
+    padding: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.03);
+}

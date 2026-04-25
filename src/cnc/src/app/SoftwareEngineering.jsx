@@ -29,7 +29,7 @@ export default function SoftwareEngineering() {
 
   return (
     <div className="main-container">
-      <div className="six-by-six-grid">
+      <div className="flex-grid">
         {cards.map(card => (
           <div key={card.key} className="grid-item">
             <NeoHoverCard

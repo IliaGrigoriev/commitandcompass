@@ -5,7 +5,7 @@ import MainFeed            from "./MainFeed";
 import MyCompass           from "./MyCompass";
 import MLDataScience       from "./MLDataScience";
 import SoftwareEngineering from "./SoftwareEngineering";
-import MainCV              from "./cv/MainCV";
+import MainCV              from "./MainCV";
 import HikesAndBytes       from "./HikesAndBytes";
 import CodersGarden        from "./CodersGarden";
 import Contact             from "./Contact";

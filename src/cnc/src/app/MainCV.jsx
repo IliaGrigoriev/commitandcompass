@@ -1,9 +1,11 @@
 import React from "react";
 
-import './css/main_cv.css'
-import './../../main.css'
+import './cv/css/main_cv.css'
+import './../main.css'
 
-import CollapsibleSection from "./CollapsibleSection";
+import CollapsibleSection from "./cv/CollapsibleSection";
+
+const Divider = () => <div className="section-divider" />;
 
 export default function MainCV() {
   return (
@@ -133,30 +135,59 @@ export default function MainCV() {
             }
           >
             <ul className="list-disc list-inside">
-              <li>Developed fMRI big data visualization tools with SOM</li>
-              <li>Enhanced fMRI analysis tools for efficiency</li>
+              <li>Mastered intricate code for processing complex fMRI data and identified areas of improvement.</li>
+              <li>Improved research efficiency with a novel Self-Organizing Map for clustering and visualizing big data.</li>
+              <li>Gained three scholarships totaling €9,500 to fund a seven-month master’s thesis project.</li>
             </ul>
           </CollapsibleSection>
-          
-          <CollapsibleSection title='Algorithms Developer – KIT (May 2013 - May 2016)'>
+            
+          <Divider />
+
+          <CollapsibleSection
+            time="May 2013 - May 2016"
+            title={
+              <>
+                <span className="highlight-yellow">Algorithms Developer </span> 
+                – Cardiac Electrophysiology Modeling {" "} – <span className="highlight-blue-cursive">Institute of Biomedical Engeneering - KIT</span>
+              </>
+            }
+          >
             <ul className="list-disc list-inside">
-              <li>Accelerated heart model computations using GPUs</li>
-              <li>Modeled atrial contraction using electrical potential maps</li>
+              <li>Reduced run time of existing algorithms for editing of trimesh surfaces by 50 % in clinical setting.</li>
+              <li>Simulated human atrial contraction using 3D interpolation of electrical potential measurements.</li>
+              <li>Improved data processing speed by optimizing mathematical computations for GPUs in C++.</li>
             </ul>
           </CollapsibleSection>
 
-          <CollapsibleSection title='Image Processing Developer – DESY (Jul 2014 - Sep 2014)'>
+          <CollapsibleSection
+            time="Jul 2014 - Sep 2014"
+            title={
+              <>
+                <span className="highlight-yellow">Image Processing Developer </span>
+                – Coherent Diffraction Imaging {" "} – <span className="highlight-blue-cursive">DESY</span>
+              </>
+            }
+          >
             <ul className="list-disc list-inside">
-              <li>Simulated and reconstructed electron density of colloidal crystals</li>
+              <li>Clarified challenges for the team by developing a MATLAB pipeline to simulate the experiment.</li>
+              <li>Created a 3D model of colloidal crystals in a divergent beam for more accurate analysis.</li>
+              <li>Enhanced image quality of colloidal crystals via Fourier methods under curved wavefronts.</li>
             </ul>
           </CollapsibleSection>
-          
-          <CollapsibleSection title='Software Developer – LANG (Aug 2010 - Jan 2013)'>
+          <CollapsibleSection
+            time="Aug 2010 - Jan 2013"
+            title={
+              <>
+                <span className="highlight-yellow">Software Developer </span>
+                – Improving Cargo Truck Safety {" "} – <span className="highlight-blue-cursive">ISCL GmbH - IT Security Consulting</span>
+              </>
+            }
+          >
             <ul className="list-disc list-inside">
-              <li>Developed driving time compliance software in Groovy & Grails</li>
+              <li>Developed algorithms to monitor driving data for EU regulation compliance in a Groovy & Grails project.</li>
+              <li>Coordinated with clients to deliver a complex project on time, requiring effective communication.</li>
             </ul>
-          </CollapsibleSection>
-        
+          </CollapsibleSection>        
         </div>
       </section>
     </div>
