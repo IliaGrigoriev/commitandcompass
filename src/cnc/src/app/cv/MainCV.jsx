@@ -54,42 +54,84 @@ export default function MainCV() {
       <section>
         <h2 className="text-2xl font-semibold mb-4">Experience</h2>
         <div className="space-y-6">
-          
-          <CollapsibleSection title='Software & Machine Learning Engineer – IME AACHEN (Jan 2024 - Present)'>
-            <h3 className="text-xl font-bold">Software & Machine Learning Engineer – IME AACHEN (Jan 2024 - Present)</h3>
+            <CollapsibleSection
+              time="Jan 2024 – May 2026"
+              title={
+                <>
+                  <span className="highlight-yellow">ML Software Engineer</span>
+                  {" "}– Wind Turbines Development – <span className="highlight-blue-cursive">IME AACHEN (+MSE-RWTH)</span>
+                </>
+              }
+            >
             <ul className="list-disc list-inside">
-              <li>Architecting scalable microservices platform with custom API and React frontend for wind turbine modeling</li>
-              <li>Streamlined development in system modeling team</li>
-              <li>Automated heat image inspection with deep learning</li>
-              <li>Refactored legacy Java Swing code</li>
+              <li>Guided and co-developed a microservices platform with custom API and React front-end to automate turbine modeling workflows and enable scalable growth.</li>
+              <li>Streamlined software development in a system modeling team.</li>
+              <li>Automated wind turbine inspections with deep learning on heat images, improving efficiency.</li>
+              <li>Modernized Java Swing code for wind turbine calculations, reducing maintenance overhead.</li>
             </ul>
           </CollapsibleSection>
 
-          <CollapsibleSection title='Software Engineer – CARL ZEISS (Apr 2023 - Jul 2023)' >
+          <CollapsibleSection
+            time="Apr 2023 - Jul 2023"
+            title={
+              <>
+                <span className="highlight-yellow">ML Software Developer</span>
+                {" "}– Multi-Sensor Workflow Automation – <span className="highlight-blue-cursive">CARL ZEISS</span>
+              </>
+            }
+          >  
             <ul className="list-disc list-inside">
-              <li>Built PyQt clustering UI tool for mechanical component selection</li>
-              <li>Ported functionality to C# for integration</li>
+              <li>Built a PyQt app to automate mechanical component selection using clustering and visualization.</li>
+              <li>Translated the core PyQt app functionality to C# and integrated into final product.</li>
             </ul>
           </CollapsibleSection>
           
-          <CollapsibleSection title='ML Software Engineer – INDA RWTH / CLINOMIC (Jul 2019 - Dec 2022)'>
+          <CollapsibleSection
+            time="Jul 2019 - Dec 2022"
+            title={
+              <>
+                <span className="highlight-yellow">R&D ML Software Engineer (via RWTH)</span>
+                {" "}– Pioneering Intensive Care Smart Assistant – <span className="highlight-blue-cursive"> CLINOMIC / INDA RWTH </span>
+              </>
+            }
+          >
             <ul className="list-disc list-inside">
-              <li>Built ICU conversational assistant prototype</li>
-              <li>Developed access control and voice interaction system</li>
-              <li>Enhanced BERT text-query model with a genetic algorithm</li>
+              <li>Built and showcased PoC of conversational interface for ICU, gaining stakeholder confidence:</li>
+              <ul className="list-disc list-inside ml-6">
+                <li>Architected C++ pilot access control, pioneering a role-based model for ICU smart assistant.</li>
+                <li>Built PoC with wake word detection, speech-to-text, intent recognition, and text-to-speech for ICU.</li>
+              </ul>
+              <li>Optimized a Masked Language Query Model (BERT) and developed a genetic algorithm for ICU data queries.</li>
             </ul>
           </CollapsibleSection>
           
-          <CollapsibleSection title='Computational Researcher – ETH Zürich (May 2018 - Jul 2019)'>
-            <h3 className="text-xl font-bold">Computational Researcher – ETH Zürich (May 2018 - Jul 2019)</h3>
+          <CollapsibleSection
+            time="May 2018 - Jul 2019"
+            title={
+              <>
+                <span className="highlight-yellow">Data Scientist</span>
+                {" "}– Biosignal Processing – <span className="highlight-blue-cursive">Bioengineering Laboratory - ETH Zurich</span>
+              </>
+            }
+          >
             <ul className="list-disc list-inside">
-              <li>Analyzed extracellular biosignal data</li>
-              <li>Secured grant through visualizations and modeling</li>
-              <li>Mentored biology-background students on Matlab processing</li>
+              <li>Defined project scope and plan with tasks and risk assessments to study causality in neuronal networks.</li>
+              <li>Secured grant funding by analyzing and visualizing extracellular signals data from novel cell types.</li>
+              <li>Trained students with biological background how to process extracellular data in Matlab.</li>
+              <li>Modernized legacy code for neuronal signal processing to handle new type of extracellular data.</li>
+
             </ul>
           </CollapsibleSection>
           
-          <CollapsibleSection title='Algorithms Developer – EPFL (Dec 2016 - Jun 2016)'>
+          <CollapsibleSection
+            time="Dec 2016 - Jun 2016"
+            title={
+              <>
+                <span className="highlight-yellow">Algorithms Developer </span> 
+                – Neurological Anomaly Detection {" "} – <span className="highlight-blue-cursive">Medical Image Processing Lab - EPFL</span>
+              </>
+            }
+          >
             <ul className="list-disc list-inside">
               <li>Developed fMRI big data visualization tools with SOM</li>
               <li>Enhanced fMRI analysis tools for efficiency</li>

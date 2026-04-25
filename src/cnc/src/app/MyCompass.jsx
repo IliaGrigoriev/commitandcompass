@@ -19,9 +19,9 @@ export default function MyCompass() {
 }
 
 const nodes = [
-  { id: '1', x: 150, y: 200, label: 'Echoes' },
-  { id: '2', x: 300, y: 200, label: 'Pathways' },
-  { id: '3', x: 225, y: 100, label: 'Pulse' }
+  { id: '1', x: 150, y: 200, label: 'Travel' },
+  { id: '2', x: 300, y: 200, label: 'Career' },
+  { id: '3', x: 225, y: 100, label: 'Passions' }
 ];
 
 function getRandomFloat(min, max) {

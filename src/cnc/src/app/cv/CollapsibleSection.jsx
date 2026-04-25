@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './css/collapsible_section.css';
 
-export default function CollapsibleSection({ title, children }) {
+export default function CollapsibleSection({ title, children, time }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -10,6 +10,7 @@ export default function CollapsibleSection({ title, children }) {
         className="collapsible-header"
         onClick={() => setIsOpen(!isOpen)}
       >
+        <span className="collapsible-time">{time}</span>
         <div className="compass-container">
           <svg
             width="32"
@@ -36,11 +37,9 @@ export default function CollapsibleSection({ title, children }) {
         <span className="collapsible-title">{title}</span>
       </div>
 
-      {isOpen && (
-        <div className="collapsible-content">
-          {children}
-        </div>
-      )}
+      <div className={`collapsible-content ${isOpen ? "open" : ""}`}>
+        {children}
+      </div>
     </div>
   );
 }
