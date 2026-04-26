@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation }                from "react-router-dom";
 
 import "./css/sidebar.css";
+import './css/sidebarpages.css'
 import './css/hover_card_layout.css'
 
 import NeoHoverCard from "./gadgets/NeoHoverCard";
@@ -41,7 +42,7 @@ export default function HikesAndBytes() {
   }
 
   return (
-    <div className="main-container">
+    <div className="sidebarpage-container">
       <div className="flex-grid">
         {cards.map(card => (
           <div key={card.key} className="grid-item">

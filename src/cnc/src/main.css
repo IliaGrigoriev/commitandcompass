@@ -1,4 +1,4 @@
-:root {
+body {
   --bg-gradient-dark: linear-gradient(
     125deg,
     hsl(240deg 47% 7%) 0%,
@@ -32,34 +32,13 @@
   line-height: 1.5;
   font-weight: 00;
 
-  color: rgba(255, 255, 255, 0.87);
-  /*background: var(--bg-gradient-dark);*/
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+  
   background: var(--bg-gradient-dark); /* Always use dark */
-  color: rgba(255, 255, 255, 0.87);
   margin: 0;
-}
-
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -81,19 +60,3 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-@media (prefers-color-scheme: light) {
-  body {
-    background: linear-gradient(135deg, #ffffff, #e3ecf3);
-    color: #213547;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
-

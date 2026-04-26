@@ -137,6 +137,12 @@ function Compass() {
     y: n.y + n.offsetY,
   }));
 
+  const centerX = nodeCenters.reduce((s, p) => s + p.x, 0) / nodeCenters.length;
+  const centerY = nodeCenters.reduce((s, p) => s + p.y, 0) / nodeCenters.length;
+
+  const offsetX = VIEWBOX_WIDTH / 2 - centerX;
+  const offsetY = VIEWBOX_HEIGHT / 2 - centerY;
+
   return (
     <svg ref={svgRef} width="100%" height="100%" viewBox={`0 0 ${VIEWBOX_WIDTH} ${VIEWBOX_HEIGHT}`}>
       <defs>
@@ -191,6 +197,7 @@ function Compass() {
         </style>
       </defs>
 
+      <g transform={`translate(${offsetX}, ${offsetY})`}>
       <path
         d={getHullPath(nodeCenters, NODE_RADIUS)}
         fill="none"
@@ -207,12 +214,20 @@ function Compass() {
         return (
           <g key={node.id}>
             <GalaxyNode x={x} y={y} nodeId={node.id} radius={NODE_RADIUS} />
-            <text x={x} y={y + 45} textAnchor="middle" fontSize="12" fill="#ccc"  fontFamily="'Uncial Antiqua', cursive">
+            <text
+              x={x}
+              y={y + 45}
+              textAnchor="middle"
+              fontSize="12"
+              fill="#ccc"
+              fontFamily="'Uncial Antiqua', cursive"
+            >
               {node.label}
             </text>
           </g>
         );
       })}
+    </g>
     </svg>
   );
 }

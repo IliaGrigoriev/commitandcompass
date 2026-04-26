@@ -1,10 +1,10 @@
 import './css/hover_card_layout.css'
+import './css/sidebarpages.css'
 
 import NeoHoverCard from "./gadgets/NeoHoverCard";
 
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import './css/sidebar.css';
+import { useLocation }                from "react-router-dom";
 
 import SentimentRecognition from './ml_and_data_sc/SentimentRecognition';
 import KeywordSearch        from './ml_and_data_sc/KeywordSearch';
@@ -13,7 +13,7 @@ export default function MLDataScience() {
   const [selected, setSelected] = useState(null);
   const location = useLocation();
 
-  // Reset state when the location path is /ml
+  // Reset state when the location path is
   useEffect(() => {
     if (location.pathname === "/ml") {
       setSelected(null);
@@ -42,7 +42,7 @@ export default function MLDataScience() {
   } 
 
   return (
-    <div className="main-container">
+    <div className="sidebarpage-container">
       <div className="flex-grid">
         {cards.map(card => (
           <div key={card.key} className="grid-item">

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import './css/sidebarpages.css'
+
 import TextTool             from "./sw_engineering/TextTool";
 import NeoHoverCard         from "./gadgets/NeoHoverCard";
 
@@ -28,7 +30,7 @@ export default function SoftwareEngineering() {
   }
 
   return (
-    <div className="main-container">
+    <div className="sidebarpage-container">
       <div className="flex-grid">
         {cards.map(card => (
           <div key={card.key} className="grid-item">

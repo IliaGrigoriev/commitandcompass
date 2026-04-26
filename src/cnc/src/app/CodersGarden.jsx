@@ -1,10 +1,11 @@
 import './gadgets/css/coding_bear.css'
+import './css/sidebarpages.css'
 
 import HorizontalDivider from './gadgets/HorizontalDivider';
 import TravelEmoji       from './gadgets/TravelEmoji';
 import BackgroundImage   from './gadgets/BackgroundImage';
 
-const base = import.meta.env.BASE_URL; // "/"
+const base = import.meta.env.BASE_URL;
 const coding_bear = `${base}photos/cozy_coding_bear.png`;
 
 export default function CodersGarden() {

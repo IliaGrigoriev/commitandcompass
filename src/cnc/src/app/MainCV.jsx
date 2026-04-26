@@ -1,7 +1,7 @@
 import React from "react";
 
 import './cv/css/main_cv.css'
-//import './../main.css'
+import './css/sidebarpages.css'
 
 import CollapsibleSection from "./cv/CollapsibleSection";
 

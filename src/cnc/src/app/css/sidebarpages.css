@@ -1,8 +1,6 @@
-.main-container {
-    background: var(--bg-gradient-dark);
+.sidebarpage-container {
     font-family: sans-serif;
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
-    box-sizing: border-box;
 }
