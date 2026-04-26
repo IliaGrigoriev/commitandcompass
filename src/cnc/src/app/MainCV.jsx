@@ -1,7 +1,7 @@
 import React from "react";
 
 import './cv/css/main_cv.css'
-import './../main.css'
+//import './../main.css'
 
 import CollapsibleSection from "./cv/CollapsibleSection";
 
@@ -11,8 +11,7 @@ export default function MainCV() {
   return (
     <div className='main-container'>
       <header>
-        <h1>Ilia Grigoriev</h1>
-        <p>MSc in Computer Science</p>
+        <p><strong>Ilia Grigoriev</strong>, MSc in Computer Science</p>
         <p>
           <a href="mailto:grigoriev.ilia.app@gmail.com" className="text-blue-500 hover:underline">
             grigoriev.ilia.app@gmail.com
@@ -26,13 +25,17 @@ export default function MainCV() {
         </p>
       </header>
 
+      <Divider />
       <section>
-        <h2 >Professional Summary</h2>
-        <p>I can professionally architect innovative software with machine learning components, containerizing, and scaling up software projects. I can rapidly grasp new contexts, identify potential problems, and find creative algorithmic solutions.</p>
+        <p>
+          I can professionally architect innovative software with machine learning components, containerizing, 
+          and scaling up software projects. I can rapidly grasp new contexts, identify potential problems, and 
+          find creative algorithmic solutions.
+        </p>
       </section>
 
+      <Divider />
       <section>
-        <h2>Skills</h2>
         <ul>
           <li><strong>Languages:</strong> Python, C++, Matlab, C#, Java</li>
           <li><strong>Libraries/Frameworks:</strong> transformers, tensorflow, Spacy, Scikit-learn, Pytorch, NumPy, Pandas, fastAPI, React</li>
@@ -41,20 +44,40 @@ export default function MainCV() {
           <li><strong>Agile:</strong> Azure DevOPs, Tuleap, WeKan</li>
           <li><strong>Hardware:</strong> x86, ARM, NVIDIA Xavier & Jetson-Nano</li>
           <li><strong>OS:</strong> Linux, Mac OS, Windows</li>
-          <li><strong>Languages Spoken:</strong> English, German, Ukrainian, Russian, Portuguese</li>
+          <li><strong>Languages Spoken:</strong> English, German</li>
         </ul>
       </section>
 
-      <section>
-        <h2>Education</h2>
-        <p><strong>MSc Computer Science</strong> – KIT (Germany) & EPFL (Switzerland), Feb 2018</p>
-        <p><em>Thesis:</em> Developing Methods to Identify Brain Activity Patterns Using Advanced Imaging Analysis (excellent)</p>
-        <p><strong>BSc Computer Science</strong> – KIT (Germany), June 2015</p>
-        <p><em>Thesis:</em> Fuzzy Temporal Modeling of Group Constellations and Interaction Patterns in Smart Environments</p>
-      </section>
+      <Divider />
 
       <section>
-        <h2>Experience</h2>
+        <CollapsibleSection
+              time="Feb 2018"
+              title={
+                <>
+                  <span className="highlight-yellow">MSc Computer Science</span>
+                  {" "}– <span className="highlight-blue-cursive">KIT (Germany) & EPFL (Switzerland)</span>
+                </>
+              }
+        >
+        <p><em>Thesis:</em> Developing Methods to Identify Brain Activity Patterns Using Advanced Imaging Analysis (excellent)</p>
+        </CollapsibleSection>
+        <CollapsibleSection
+              time="June 2015"
+              title={
+                <>
+                  <span className="highlight-yellow">BSc Computer Science</span>
+                  {" "}– <span className="highlight-blue-cursive">KIT & Fraunhofer IOSB (Germany)</span>
+                </>
+              }
+        >
+        <p><em>Thesis:</em> Fuzzy Temporal Modeling of Group Constellations and Interaction Patterns in Smart Environments</p>
+        </CollapsibleSection>
+      </section>
+
+      <Divider />
+      
+      <section>
         <div>
             <CollapsibleSection
               time="Jan 2024 – May 2026"
@@ -65,13 +88,13 @@ export default function MainCV() {
                 </>
               }
             >
-            <ul className="list-disc list-inside">
-              <li>Guided and co-developed a microservices platform with custom API and React front-end to automate turbine modeling workflows and enable scalable growth.</li>
-              <li>Streamlined software development in a system modeling team.</li>
-              <li>Automated wind turbine inspections with deep learning on heat images, improving efficiency.</li>
-              <li>Modernized Java Swing code for wind turbine calculations, reducing maintenance overhead.</li>
-            </ul>
-          </CollapsibleSection>
+              <ul className="list-disc list-inside">
+                <li>Guided and co-developed a microservices platform with custom API and React front-end to automate turbine modeling workflows and enable scalable growth.</li>
+                <li>Streamlined software development in a system modeling team.</li>
+                <li>Automated wind turbine inspections with deep learning on heat images, improving efficiency.</li>
+                <li>Modernized Java Swing code for wind turbine calculations, reducing maintenance overhead.</li>
+              </ul>
+            </CollapsibleSection>
 
           <CollapsibleSection
             time="Apr 2023 - Jul 2023"

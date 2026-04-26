@@ -2,8 +2,13 @@
   margin-left: 32px;
   padding: 2rem;
   min-height: 100vh;
-
+  color: #fff;
   background: var(--bg-gradient-dark); 
+  font-size: 14px
+}
+
+.main-container h1 {
+  font-size: 18px;
 }
 
 .section-divider {
