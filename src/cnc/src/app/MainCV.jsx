@@ -10,9 +10,9 @@ const Divider = () => <div className="section-divider" />;
 export default function MainCV() {
   return (
     <div className='main-container'>
-      <header className="mb-12">
-        <h1 className="text-4xl font-bold">Ilia Grigoriev</h1>
-        <p className="text-lg">MSc in Computer Science</p>
+      <header>
+        <h1>Ilia Grigoriev</h1>
+        <p>MSc in Computer Science</p>
         <p>
           <a href="mailto:grigoriev.ilia.app@gmail.com" className="text-blue-500 hover:underline">
             grigoriev.ilia.app@gmail.com
@@ -26,14 +26,14 @@ export default function MainCV() {
         </p>
       </header>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-2">Professional Summary</h2>
+      <section>
+        <h2 >Professional Summary</h2>
         <p>I can professionally architect innovative software with machine learning components, containerizing, and scaling up software projects. I can rapidly grasp new contexts, identify potential problems, and find creative algorithmic solutions.</p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-2">Skills</h2>
-        <ul className="list-disc list-inside">
+      <section>
+        <h2>Skills</h2>
+        <ul>
           <li><strong>Languages:</strong> Python, C++, Matlab, C#, Java</li>
           <li><strong>Libraries/Frameworks:</strong> transformers, tensorflow, Spacy, Scikit-learn, Pytorch, NumPy, Pandas, fastAPI, React</li>
           <li><strong>DBMS:</strong> PostgreSQL, MySQL</li>
@@ -45,8 +45,8 @@ export default function MainCV() {
         </ul>
       </section>
 
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-2">Education</h2>
+      <section>
+        <h2>Education</h2>
         <p><strong>MSc Computer Science</strong> – KIT (Germany) & EPFL (Switzerland), Feb 2018</p>
         <p><em>Thesis:</em> Developing Methods to Identify Brain Activity Patterns Using Advanced Imaging Analysis (excellent)</p>
         <p><strong>BSc Computer Science</strong> – KIT (Germany), June 2015</p>
@@ -54,8 +54,8 @@ export default function MainCV() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Experience</h2>
-        <div className="space-y-6">
+        <h2>Experience</h2>
+        <div>
             <CollapsibleSection
               time="Jan 2024 – May 2026"
               title={
